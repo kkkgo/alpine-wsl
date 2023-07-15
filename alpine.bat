@@ -34,4 +34,5 @@ del /F /S /Q alpine.tar.gz
 wsl -d alpine -e uname -a
 wsl -d alpine -e sh -c "apk add nano vim wget curl bind-tools openssh traceroute zsh git grml-zsh-config"
 wsl -d alpine -e sh -c "sed -i 's#/bin/ash#/bin/zsh#g' /etc/passwd"
+wslconfig /setdefault alpine
 wsl
